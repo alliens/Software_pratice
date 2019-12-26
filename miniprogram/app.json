@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/booking/booking"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#f2f2f2",
+    "navigationBarBackgroundColor": "#63B8FF",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "预约",
+        "iconPath": "/images/icon/collection-anti.png",
+        "selectedIconPath": "images/icon/collection.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/images/tab/ciwei.png",
+        "selectedIconPath": "images/tab/ciwei_hl.png"
+      }
+    ]
+  }
+}

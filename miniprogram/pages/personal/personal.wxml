@@ -1,0 +1,50 @@
+<view>
+  <image src='/images/avatar/background.jpg' class='top-img'></image>
+  <view>
+    <!-- <image src='{{userInfo.avatarUrl}}' class='login-img'></image>
+    <text class='user-name'>{{userInfo.nickName}}</text> -->
+    <view class='booking'>
+      <!-- <image class='login-img' src='/images/avatar/doctor.jpg'></image> -->
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='btn' >
+        <view class='login-text'>点击登录</view>
+      </button>
+      <image wx:if="{{hasUserInfo}}" class='login-img' src='{{userInfo.avatarUrl}}'></image>
+      <image wx:elif="{{!hasUserInfo}}" class='login-img' src='/images/avatar/doctor.jpg'></image>
+      <text wx:if="{{hasUserInfo}}" class='user-name'>{{userInfo.nickName}}</text>
+
+    </view>
+  </view>
+</view>
+
+<view>
+  <view class='vie-one' bindtap='info'>
+
+    <image src='/images/avatar/info.png' class='info-img'></image>
+    <text class='info' bindtap='info'>我的资料</text>
+    <image src='/images/icon/arrow-right.png' class='arrow'></image>
+  </view>
+
+  <modal hidden="{{hiddenmodalput}}" title="请完善个人信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text' placeholder="{{uname}}" bindinput='inputName' name='name' auto-focus/>
+    <input type='number' placeholder="{{usclnum}}" bindinput='inputNumber' name='number' auto-focus/>
+  </modal>
+  <view class='horizon1'></view>
+
+  <view class='vie-two' bindtap='record'>
+    <image src='/images/avatar/guahao.jpg' class='guahao-img'></image>
+    <text class='guahao'>挂号记录</text>
+    <image src='/images/icon/arrow-right.png' class='arrow'></image>
+
+  </view>
+  <view class='horizon1'></view>
+
+  <view class='vie-three'>
+    <image src='/images/avatar/timg.jpg' class='service-img'></image>
+    <text class='service' bindtap='call'>客服电话</text>
+    <image src='/images/icon/arrow-right.png' class='arrow-1'></image>
+    <text class='service-number' bindtap='call'> 18811639806</text>
+  </view>
+</view>
+
+<!-- <button type='primary' bindtap='getOpenid'>获取用户openid</button>
+<text>{{openid}}</text> -->

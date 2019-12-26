@@ -1,0 +1,206 @@
+.top-img {
+  height: 220rpx;
+  width: 100%;
+}
+
+.login-img {
+  height: 120rpx;
+  width: 120rpx;
+  z-index: 2;
+  position: absolute;
+  left: 40rpx;
+  top: 55rpx;
+  border-radius: 50%;
+}
+
+.user-name {
+  z-index: 2;
+  position: absolute;
+  left: 225rpx;
+  top: 85rpx;
+}
+
+.login-text {
+  color: white;
+  position: relative;
+  top: -5px;
+}
+
+button::after {
+  border: none;
+}
+
+.btn {
+  width: 30%;
+  height: 38px;
+  border-radius: 25px;
+  position: absolute;
+  left: 200rpx;
+  top: 80rpx;
+  z-index: 2;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+input {
+  width: 300rpx;
+  border: 2rpx solid #000;
+  margin: 50rpx auto;
+  border-radius: 10rpx;
+}
+
+.info-img {
+  height: 70rpx;
+  width: 80rpx;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+  vertical-align: middle;
+}
+
+.info {
+  margin-left: 30rpx;
+  position: relative;
+  top: 15rpx;
+  font-family: Microsoft Yahei;
+}
+
+.guahao-img {
+  height: 70rpx;
+  width: 70rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  vertical-align: middle;
+}
+
+.guahao {
+  margin-left: 30rpx;
+  position: relative;
+  top: 15rpx;
+  font-family: Microsoft Yahei;
+}
+
+.service-img {
+  height: 70rpx;
+  width: 80rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  vertical-align: middle;
+}
+
+.service {
+  margin-left: 30rpx;
+  position: relative;
+  top: 15rpx;
+  font-family: Microsoft Yahei;
+}
+
+.horizon1 {
+  position: relative;
+  top: -60px;
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.service-number {
+  font-size: 35rpx;
+  float: right;
+  color: grey;
+  position: relative;
+  top: 30rpx;
+  right: 55rpx;
+}
+
+.vie-one {
+  position: relative;
+  top: -60px;
+  margin-bottom: 30rpx;
+}
+
+.vie-two {
+  position: relative;
+  top: -60px;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.vie-three {
+  position: relative;
+  top: -60px;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.arrow {
+  height: 20rpx;
+  width: 20rpx;
+  float: right;
+  position: relative;
+  right: 35rpx;
+  top: 45rpx;
+}
+
+.arrow-1 {
+  height: 20rpx;
+  width: 20rpx;
+  float: right;
+  position: relative;
+  right: 35rpx;
+  top: 45rpx;
+}
+
+.booking {
+  margin-top: 170rpx;
+}
+
+.cont {
+  position: relative;
+  width: 100%;
+  height: 350rpx;
+  text-align: center;
+  background-color: beige;
+}
+
+/* 头像 */
+
+.list_img {
+  position: relative;
+  top: 25%;
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 50%;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0145a;
+  width: 100%;
+  height: 300rpx;
+}
+
+.userinfo-btn {
+  margin-top: 50rpx;
+  background: none !important;
+  color: #fff !important;
+  font-size: 40rpx;
+}
+
+.userinfo-avatar {
+  width: 108rpx;
+  height: 108rpx;
+  margin: 40rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+
+
+

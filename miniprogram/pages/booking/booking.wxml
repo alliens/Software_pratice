@@ -1,0 +1,100 @@
+<!--主盒子-->
+<view class="container">
+  <!-- 左侧栏 -->
+  <view class='nav_left'>
+    <view class="nav_left_items {{curId == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+      <text class='in'>内科</text>
+    </view>
+    <view class="nav_left_items {{curId == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+      <text class='out'>外科</text>
+    </view>
+    <view class="nav_left_items  {{curId == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+      <text class='women'>妇科</text>
+    </view>
+    <view class="nav_left_items {{curId == 4 ? 'active' : ''}}" bindtap="switchRightTab" data-id="4">
+      <text class='eye'>眼耳鼻喉科</text>
+    </view>
+  </view>
+  <!-- 右侧栏 -->
+  <view class='nav_right'>
+    <view>
+      <text class='introduction'>北京化工大学校医院承担着全校东、西、北三个校区2万2千名师生的医疗、预防、保健工作。校医院有一批业务素质较高、临床经验丰富、热情为患者服务的医疗队伍，校医院现有人员37人，其中副主任医师2人，中级职称14人。  </text>
+    </view>
+    <view class='dean'>
+      <text>院长：宗力群  联系电话：64436283 </text>
+    </view>
+    <view class='emergency'>
+      <text>急诊值班室联系电话：64434832 联系人：值班大夫</text>
+    </view>
+  </view>
+
+
+  <view class="nav_right" wx:if="{{curId==1}}">
+    <view>
+      <text>内科</text>
+    </view>
+    <view class='line'></view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorOne' bindtap='Booking' data-number="1">{{doctor[0].name+"医生"}}</text>
+    </view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorTwo' bindtap='Booking' data-number="2">{{doctor[1].name+"医生"}}</text>
+    </view>
+  </view>
+  <view class="nav_right" wx:if="{{curId==2}}">
+    <view>
+      <text>外科</text>
+    </view>
+    <view class='line'></view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorOne' bindtap='Booking' data-number="3">
+      <!-- {{doctor[2].name+"医生"}} -->未注册
+      </text>
+    </view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorTwo' bindtap='Booking' data-number="4">
+      <!-- {{doctor[3].name+"医生"}} -->未注册
+      </text>
+    </view>
+  </view>
+</view>
+<view class="nav_right" wx:if="{{curId==3}}">
+  <view>
+    <text>妇科</text>
+  </view>
+  <view class='line'></view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorOne' bindtap='Booking' data-number="5">
+      <!-- {{doctor[4].name+"医生"}} -->未注册
+      </text>
+    </view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorTwo' bindtap='Booking' data-number="6">
+      <!-- {{doctor[5].name+"医生"}} -->未注册
+      </text>
+    </view>
+</view>
+<view class="nav_right" wx:if="{{curId==4}}">
+  <view>
+    <text bindtap='Booking'>耳鼻咽喉科</text>
+  </view>
+  <view class='line'></view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorOne' bindtap='Booking' data-number="7">
+      <!-- {{doctor[6].name+"医生"}} -->未注册
+      </text>
+    </view>
+    <view>
+      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <text class='doctorTwo' bindtap='Booking' data-number="8">
+      <!-- {{doctor[7].name+"医生"}} -->未注册
+      </text>
+    </view>
+</view>

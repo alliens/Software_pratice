@@ -1,0 +1,95 @@
+.container {
+  background-color: #f2f2f2;
+}
+
+swiper {
+  width: 100%;
+  height: 450rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 450rpx;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.line {
+  width: 750rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  margin-top: 20rpx;
+  z-index: -99;
+  position: absolute;
+  top: 20rpx;
+}
+
+.loc-container {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.address {
+  margin-left: 15rpx;
+}
+
+.phone-number {
+  margin-left: 25rpx;
+}
+
+.phone-container {
+  margin-top: 40rpx;
+  margin-left: 28rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-img {
+  height: 45rpx;
+  width: 45rpx;
+}
+
+.loc-img {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.moto-container {
+  margin-top: 160rpx;
+  border: 1px solid black;
+  width: 260rpx;
+  height: 80rpx;
+  border-radius: 5px;
+}
+
+.btn_hover {
+  background-color: white;
+}
+
+.booking {
+  margin-top: 170rpx;
+}
+
+.btn {
+  width: 50%;
+  border-right: solid 0.5rpx silver;
+}
+.help{
+  position: relative;
+  left: 315rpx;
+  top: 100rpx;
+  text-decoration: underline;
+  font-size: 30rpx;
+}
+
