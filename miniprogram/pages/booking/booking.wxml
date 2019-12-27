@@ -35,11 +35,11 @@
     </view>
     <view class='line'></view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorOne' bindtap='Booking' data-number="1">{{doctor[0].name+"医生"}}</text>
     </view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorTwo' bindtap='Booking' data-number="2">{{doctor[1].name+"医生"}}</text>
     </view>
   </view>
@@ -49,13 +49,13 @@
     </view>
     <view class='line'></view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorOne' bindtap='Booking' data-number="3">
       <!-- {{doctor[2].name+"医生"}} -->未注册
       </text>
     </view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorTwo' bindtap='Booking' data-number="4">
       <!-- {{doctor[3].name+"医生"}} -->未注册
       </text>
@@ -68,13 +68,13 @@
   </view>
   <view class='line'></view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorOne' bindtap='Booking' data-number="5">
       <!-- {{doctor[4].name+"医生"}} -->未注册
       </text>
     </view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorTwo' bindtap='Booking' data-number="6">
       <!-- {{doctor[5].name+"医生"}} -->未注册
       </text>
@@ -86,13 +86,13 @@
   </view>
   <view class='line'></view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorOne' bindtap='Booking' data-number="7">
       <!-- {{doctor[6].name+"医生"}} -->未注册
       </text>
     </view>
     <view>
-      <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+      <image class='doctor-img' src='/images/avatar/doctor.png'></image>
       <text class='doctorTwo' bindtap='Booking' data-number="8">
       <!-- {{doctor[7].name+"医生"}} -->未注册
       </text>

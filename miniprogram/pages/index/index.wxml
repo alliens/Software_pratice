@@ -19,12 +19,12 @@
 <view class='line'></view>
 
 <view class='loc-container' bindtap='navigate'>
-  <image class='loc-img' src="/images/icon/location.jpg"></image>
+  <image class='loc-img' src="/images/icon/location.png"></image>
   <text class='address'>北京化工大学昌平校区后勤服务楼 </text>
 </view>
 
 <view class='phone-container'>
-  <image class='phone-img' src="/images/icon/phone.jpeg"></image>
+  <image class='phone-img' src="/images/icon/phone.png"></image>
   <view bindtap='call'>
     <text class="phone-number">010-80104061</text>
   </view>

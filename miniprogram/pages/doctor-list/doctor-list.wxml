@@ -1,0 +1,42 @@
+<view>
+  <image src='/images/avatar/background.jpg' class='background-img'></image>
+  <image class='doctor-img' src='/images/avatar/doctor.jpg'></image>
+</view>
+<view>
+  <text class='doc-name'>{{dname}}</text>
+  <text class='doc-profession'>{{dpro}}</text>
+  <text class='doc-introdution'>医生简介:{{dintro}}</text>
+  <!-- <view class='booking-quantity'>
+    <text>预约量：</text>
+  </view> -->
+  <!-- <view class='booking-quantities'>
+    <text>{{dnum}}</text>
+    <!-- 预约量 -->
+  <!-- </view> --> 
+
+</view>
+
+<!-- <view>
+  <text class='booking-time'>请选择预约时间:</text>
+</view> -->
+
+<!-- 日期选择 -->
+<view class='containt'>
+  <scroll-view class="scroll-view_H" scroll-x>
+    <view class='list' style='width:{{ width }}rpx'>
+      <view bindtap="select" wx:for="{{ calendar }}" wx:for-item="item" wx:for-index="index" data-index="{{ index }}" class='listItem {{index==choosingDate? "current":""}}' wx:key='' data-date="{{ item.date}}">
+        <text class='name'>{{ item.week }}</text>
+        <text class='date'>{{ item.date }}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='time'>
+    <view wx:for="{{ timeArr }}" wx:for-item="timeItem" wx:for-index="timeIndex" data-Tindex="{{ timeIndex }}" data-time="{{ timeItem.time}}" data-status="{{timeItem.status}}" bindtap='selectTime' class='listItem {{ choosingTime==timeIndex&&timeItem.status=="可约"? "current":"" }} listItem {{timeItem.status=="已约"? "current1":""}}' wx:key>
+      <text>{{ timeItem.time }}</text>
+      <text>{{ timeItem.status }}</text>
+    </view>
+  </view>
+</view>
+<view class='booking'>
+  <button class='btn' bindtap='Booking' hover-class='btn_hover'>预约</button>
+</view>
