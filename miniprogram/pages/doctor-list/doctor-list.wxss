@@ -1,0 +1,191 @@
+.doctor-img {
+  height: 120rpx;
+  width: 120rpx;
+  z-index: 2;
+  position: absolute;
+  left: 40rpx;
+  top: 55rpx;
+  border-radius: 50%;
+}
+
+.background-img {
+  height: 220rpx;
+  width: 100%;
+}
+
+.doc-name {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  left: 185rpx;
+  top: 40rpx;
+}
+
+.doc-profession {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  left: 185rpx;
+  top: 105rpx;
+  font-size: 25rpx;
+}
+
+.doc-introdution {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  left: 185rpx;
+  top: 155rpx;
+  font-size: 25rpx;
+}
+
+.booking-quantity {
+  font-size: 30rpx;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  left: 500rpx;
+  top: 40rpx;
+}
+
+.booking-quantities {
+  font-size: 35rpx;
+  color: green;
+  z-index: 2;
+  position: absolute;
+  left: 605rpx;
+  top: 35rpx;
+}
+
+scroll-view {
+  height: 128rpx;
+  width: 100%;
+}
+
+scroll-view .list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 1302rpx;
+}
+
+scroll-view .listItem {
+  text-align: center;
+  width: 186rpx;
+  height: 128rpx;
+  background-color: #f1f2f6;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  /* float: left; */
+  display: inline-block;
+}
+
+scroll-view .listItem text {
+  display: block;
+}
+
+scroll-view .listItem .name {
+  font-size: 30rpx;
+}
+
+scroll-view .listItem .date {
+  font-size: 30rpx;
+}
+
+scroll-view .current {
+  background-color: #76aef8;
+}
+
+scroll-view .current text {
+  color: #fff;
+}
+
+.time {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.time .listItem {
+  width: 25%;
+  height: 135rpx;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-top: 35rpx;
+  border: 1px solid #b9c1c8;
+}
+
+.time .listItem text {
+  display: block;
+  font-size: 30rpx;
+}
+
+.time .current {
+  border: 1px solid #76aef8;
+}
+
+.time .current1 text {
+  color:red;
+  /* #76aef8; */
+}
+.time .current text {
+  color:green;
+  /* #76aef8; */
+}
+.time .current2 text {
+  color:black;
+  /* #76aef8; */
+}
+
+.operate button {
+  width: 300rpx;
+  height: 88rpx;
+  background-color: #fff;
+}
+
+.operate .del {
+  color: #e54449;
+}
+
+.operate button::after {
+  border: 2px solid #e54449;
+}
+
+.operate {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.operate button:nth-child(2):after {
+  border: 2px solid #e54449;
+}
+
+.operate .save {
+  color: #fff;
+  background-color: #e54449;
+}
+
+.operate {
+  width: 100%;
+  padding: 30rpx 0;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+}
+.btn_hover {
+  background-color: white;
+}
+
+.booking {
+  margin-top: 18rpx;
+} 
+
+.btn {
+  width: 50%;
+  border-right: solid 0.5rpx silver;
+}

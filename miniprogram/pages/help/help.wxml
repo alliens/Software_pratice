@@ -1,0 +1,36 @@
+<view class="card">
+  <view>
+    <text class='Title'>"北化微医"使用帮助</text>
+  </view>
+  <view class='horizon1'></view>
+  <view>
+    <text class='intro'>"北化微医"是北京化工大学校医院预约挂号小程序，可为北化在校学生提供挂号预约服务。</text>
+  </view>
+
+  <view>
+    <text class='booking-process'>个人预约流程</text>
+    <view>
+      <text class='detail'>点击 我的 -> 点击登录，然后点击"我的资料"填入学号和姓名,即可进行预约挂号</text>
+    </view>
+    <image src='/images/icon/ph2.jpeg' class='ph1'></image>
+    <image src='/images/icon/ph1.jpeg' class='ph2'></image>
+  </view>
+
+  <view>
+    <text class='booking-detail'>完成实名注册后，即可开始预约。点击预约按钮进入科室列表。点击就诊科室的医生进入相应的时间列表页面，选择好可预约的时间段，按下预约按钮即可完成预约。</text>
+  </view>
+  <image src='/images/icon/ph3.jpeg' class='ph3'></image>
+  <image src='/images/icon/ph4.jpeg' class='ph4'></image>
+
+  <view>
+    <text class='navi'>不认路的小伙伴可以点击首页的地点进行导航</text>
+  </view>
+  <view>
+    <text class='interpretation'>说明:小程序不收取任何费用，挂号费由医院进行收取</text>
+  </view>
+</view>
+<view>
+  <button class='btn' hover-class='after' bindtap='idx'>
+    <text class='submit'>我已知晓</text>
+  </button>
+</view>
