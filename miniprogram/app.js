@@ -9,6 +9,7 @@ App({
       env: 'buct-medicine-65f74a',
       traceUser: true
     })
+    //666
     // 登录
     //冲突
     wx.login({
