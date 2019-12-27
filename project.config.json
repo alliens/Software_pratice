@@ -11,6 +11,8 @@
 	"appid": "wx1a6879fce85ad9aa",
 	"projectname": "BUCT_Pocket%20Medical",
 	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
