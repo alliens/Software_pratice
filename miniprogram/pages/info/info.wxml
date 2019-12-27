@@ -1,0 +1,31 @@
+<text class='Title'>北化校医院</text>
+<view class="card">
+  <view>
+    <view>
+      <image src='/images/tab/3.jpg' class='type-img'></image>
+      <text class='type'>证件类型：学生校园卡</text>
+    </view>
+    <view class='horizon1'></view>
+    <view>
+      <image src='/images/tab/1.png' class='type-img2'></image>
+      <text class='time'>您的姓名：</text>
+      <input type='text' class='input' placeholder="{{uname}}" placeholder-class='place' bindinput='inputName' name='name' />
+      <!-- placeholder="{{uname}}" -->
+      <view>
+        <view class='horizon2'></view>
+        <image src='/images/tab/3.jpg' class='type-img3'></image>
+        <text class='time2'>您的学号：</text>
+        <input type='number' class='input2' placeholder="{{usclnum}}" bindinput='inputNumber' name='number' placeholder-class='place' />
+        <!-- placeholder="{{usclnum}}" -->
+        <view>
+          <view class='horizon3'></view>
+          <button class='btn' hover-class='after' data-record="{{item._id}}" bindtap='upload'>
+            <text class='submit'>提交</text>
+          </button>
+          <text class='intro3'>就诊时请出示学生证件</text>
+          <text class='intro4'>请确认证件与本人一致、证件号准确，否则无法进行就诊</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

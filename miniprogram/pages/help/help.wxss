@@ -1,0 +1,146 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 4600rpx;
+  background-color: #f4f4f4;
+}
+
+.card {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 4px 1px 1px #ccc;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  height: 4300rpx;
+  width: 700rpx;
+}
+
+.time {
+  font-size: 33rpx;
+  margin-left: 13rpx;
+  position: relative;
+  top: 30rpx;
+  color: #575757;
+}
+
+.date {
+  font-weight: 600;
+  font-family: Microsoft Yahei;
+  margin-left: 10rpx;
+  position: relative;
+  top: 10rpx;
+}
+
+.horizon1 {
+  position: relative;
+  top: 50rpx;
+  width: 700rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.Title {
+  font-weight: 600;
+  font-size: 40rpx;
+  margin-left: 13rpx;
+  position: relative;
+  top: 30rpx;
+  left: 20rpx;
+}
+
+.intro {
+  font-size: 33rpx;
+  font-family: Microsoft Yahei;
+  margin-left: 10rpx;
+  position: relative;
+  top: 70rpx;
+  left: 20rpx;
+}
+
+.booking-process {
+  font-weight: 600;
+  font-family: Microsoft Yahei;
+  position: relative;
+  top: 200rpx;
+  left: 30rpx;
+}
+
+.detail {
+  position: relative;
+  top: 260rpx;
+  left: 20rpx;
+  font-size: 33rpx;
+}
+
+.ph1 {
+  position: relative;
+  top: 300rpx;
+  left: 30rpx;
+}
+
+.ph2 {
+  position: relative;
+  top: 400rpx;
+  left: 30rpx;
+  height: 700rpx;
+}
+
+.booking-detail {
+  font-size: 33rpx;
+  font-family: Microsoft Yahei;
+  margin-left: 10rpx;
+  position: relative;
+  top: 500rpx;
+  left: 20rpx;
+}
+
+.ph3 {
+  position: relative;
+  top: 600rpx;
+  left: 30rpx;
+}
+
+.ph4 {
+  position: relative;
+  top: 700rpx;
+  left: 30rpx;
+  height: 1000rpx;
+}
+
+.navi{
+  font-size: 30rpx;
+  text-decoration: underline;
+  position: relative;
+  top: 800rpx;
+  left: 50rpx;
+  color: #575757;
+}
+.interpretation{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: red;
+  position: relative;
+  top: 880rpx;
+}
+.btn {
+  width: 95%;
+  height: 100%;
+  line-height: 65rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  border: 1px solid #63b8ff;
+  background-color: #63b8ff;
+  position: relative;
+}
+
+.after {
+  background-color: #63b8ff;
+}
+
+.submit {
+  font-size: 35rpx;
+  color: white;
+}

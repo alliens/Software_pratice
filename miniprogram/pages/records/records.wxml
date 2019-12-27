@@ -1,0 +1,67 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" wx:for-index="index" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--近期预约-->
+<view wx:if="{{currentTab==0}}" wx:for="{{new_record}}" wx:for-item="item" wx:key='' data-record="{{item._id}}">
+  <view class="card">
+    <view>
+      <view>
+        <text class='date'>{{item.date}}</text>
+        <text class='success'>预约成功</text>
+      </view>
+      <view class='horizon1'></view>
+      <view>
+        <text wx:if="{{item.time[0]=='8'||item.time[0]=='9'||item.time[0]=='10'||item.time[0]=='11'||item.time[0]=='12'}}" class='time'>上午: {{item.time}}</text>
+        <text wx:else class='time'>下午: {{item.time}}</text>
+        <view>
+          <view>
+            <text class='user'>预约医生: {{item.doctor_name}}</text>
+          </view>
+          <view class='horizon2'></view>
+          <text class='intro1'>请你携带有效证件到指定诊室进行就诊</text>
+        </view>
+        <view>
+          <text class='intro2'>持有医疗证的同学可以获得学校的医疗报销</text>
+        </view>
+        <view>
+          <view class='horizon3'></view>
+          <button class='btn' hover-class='after' data-record="{{item._id}}" bindtap='concel'>
+            <text class='cancle'>取消</text>
+          </button>
+          <text class='intro3'>预约当日无法取消预约，请务必提前取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--历史预约-->
+<view wx:if="{{currentTab==1}}" wx:for="{{records}}" wx:for-item="item" wx:key=''>
+  <view class="card">
+    <view>
+      <view>
+        <text class='date'>{{item.date}}</text>
+        <text class='success'>预约成功</text>
+      </view>
+      <view class='horizon1'></view>
+      <view>
+        <text wx:if="{{item.time[0]=='8'||item.time[0]=='9'||item.time[0]=='10'||item.time[0]=='11'||item.time[0]=='12'}}" class='time'>上午: {{item.time}}</text>
+        <text wx:else class='time'>下午: {{item.time}}</text>
+        <view>
+          <view>
+            <text class='user'>预约医生: {{item.doctor_name}}</text>
+          </view>
+          <view class='horizon2'></view>
+          <text class='intro1'>请你携带有效证件到指定诊室进行就诊</text>
+        </view>
+        <view>
+          <text class='intro2'>持有医疗证的同学可以获得学校的医疗报销</text>
+        </view>
+        <view class='horizon3'></view>
+        <view>
+          <text class='intro4'>预约当日无法取消预约，请务必提前取消</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
