@@ -8,7 +8,7 @@
     "backgroundTextStyle": "light",
     "backgroundColor": "#f2f2f2",
     "navigationBarBackgroundColor": "#63B8FF",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "掌上医疗",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -17,22 +17,21 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "/images/tab/yuedu.png",
-        "selectedIconPath": "images/tab/yuedu_hl.png"
+        "iconPath": "/images/tab/home.png",
+        "selectedIconPath": "images/tab/home_click.png"
       },
       {
         "pagePath": "pages/booking/booking",
         "text": "预约",
-        "iconPath": "/images/icon/collection-anti.png",
-        "selectedIconPath": "images/icon/collection.png"
+        "iconPath": "/images/tab/order.png",
+        "selectedIconPath": "images/tab/order_click.png"
       },
       {
         "pagePath": "pages/personal/personal",
         "text": "我的",
-        "iconPath": "/images/tab/ciwei.png",
-        "selectedIconPath": "images/tab/ciwei_hl.png"
+        "iconPath": "/images/tab/user.png",
+        "selectedIconPath": "images/tab/user_click.png"
       }
     ]
   }
 }
-//测试1
