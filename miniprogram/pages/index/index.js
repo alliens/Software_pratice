@@ -15,6 +15,7 @@ Page({
     canIUseClipboard: wx.canIUse('setClipboardData'),
   },
 
+  // 点击预约
   submit: function (event) {
     wx.cloud.callFunction({
       name: 'getid',
