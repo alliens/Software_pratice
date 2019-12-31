@@ -5,7 +5,7 @@
     <text class='user-name'>{{userInfo.nickName}}</text> -->
     <view class='booking'>
       <!-- <image class='login-img' src='/images/avatar/doctor.jpg'></image> -->
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='btn' >
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindgetUserInfo" class='btn' >
         <view class='login-text'>点击登录</view>
       </button>
       <image wx:if="{{hasUserInfo}}" class='login-img' src='{{userInfo.avatarUrl}}'></image>
@@ -45,6 +45,3 @@
     <text class='service-number' bindtap='call'> 18811639806</text>
   </view>
 </view>
-
-<!-- <button type='primary' bindtap='getOpenid'>获取用户openid</button>
-<text>{{openid}}</text> -->
