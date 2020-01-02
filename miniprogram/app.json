@@ -8,7 +8,8 @@
     "pages/records/records",
     "pages/info/info",
     "pages/help/help",
-    "pages/feedback/feedback"
+    "pages/feedback/feedback",
+    "pages/upload/upload"
   ],
   "window": {
     "backgroundTextStyle": "light",
