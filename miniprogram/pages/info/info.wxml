@@ -2,19 +2,19 @@
 <view class="card">
   <view>
     <view>
-      <image src='/images/tab/3.jpg' class='type-img'></image>
-      <text class='type'>证件类型：学生校园卡</text>
+      <image src='/images/tab/id.png' class='type-img'></image>
+      <text class='type'>证件类型：学生校园卡/教职工卡</text>
     </view>
     <view class='horizon1'></view>
     <view>
-      <image src='/images/tab/1.png' class='type-img2'></image>
+      <image src='/images/tab/name.png' class='type-img2'></image>
       <text class='time'>您的姓名：</text>
       <input type='text' class='input' placeholder="{{uname}}" placeholder-class='place' bindinput='inputName' name='name' />
       <!-- placeholder="{{uname}}" -->
       <view>
         <view class='horizon2'></view>
-        <image src='/images/tab/3.jpg' class='type-img3'></image>
-        <text class='time2'>您的学号：</text>
+        <image src='/images/tab/card.png' class='type-img3'></image>
+        <text class='time2'>您的编号：</text>
         <input type='number' class='input2' placeholder="{{usclnum}}" bindinput='inputNumber' name='number' placeholder-class='place' />
         <!-- placeholder="{{usclnum}}" -->
         <view>
