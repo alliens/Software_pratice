@@ -20,7 +20,7 @@
   <view class='vie-one' bindtap='info'>
 
     <image src='/images/avatar/info.png' class='info-img'></image>
-    <text class='info' bindtap='info'>我的资料</text>
+    <text class='info'>我的资料</text>
     <image src='/images/icon/arrow-right.png' class='arrow'></image>
   </view>
 
@@ -38,9 +38,9 @@
   </view>
   <view class='horizon1'></view>
 
-  <view class='vie-three'>
+  <view class='vie-three' bindtap='call'>
     <image src='/images/avatar/timg.png' class='service-img'></image>
-    <text class='service' bindtap='call'>客服电话</text>
+    <text class='service'>客服电话</text>
     <image src='/images/icon/arrow-right.png' class='arrow-1'></image>
     <text class='service-number' bindtap='call'> 18811639806</text>
   </view>
