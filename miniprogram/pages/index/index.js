@@ -2,6 +2,7 @@
 //获取应用实例
 const app = getApp()
 var id = ''
+var next=''
 wx.cloud.init();
 const db = wx.cloud.database({
   //这个是环境ID不是环境名称
@@ -70,6 +71,18 @@ Page({
       scale: 15
     })
   },
+  
+  actioncnt: function () {
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C'],
+      success: function (res) {
+        console.log(res.tapIndex)
+      },
+      fail: function (res) {
+        console.log(res.errMsg)
+      }
+    })
+  },
 
   onLoad: function () {
     wx.cloud.callFunction({
@@ -87,9 +100,28 @@ Page({
     })
   },
   gerenBook:function(e){
-    wx.navigateTo({
-      url: '../booking/booking',
+    // wx.navigateTo({
+    //   url: '../booking/booking',
+    // })
+    wx.showActionSheet({
+      itemList: ['昌平校区', '东校区'],
+      success: function (res) {
+        //console.log(res.tapIndex)
+        if (res.tapIndex==0){
+          next = '../booking/booking?id=' + 'north'
+        }
+        else {
+          next = '../booking/booking?id=' + 'east'
+        }
+        wx.navigateTo({
+          url: next,
+        })
+      },
+      fail: function (res) {
+        console.log(res.errMsg)
+      }
     })
+
   },
   wodeBook:function(e){
     wx.navigateTo({
