@@ -1,8 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/booking/booking",
+    "pages/reservation/reservation",
     "pages/personal/personal",
-    "pages/booking/booking"
+    "pages/doctor-list/doctor-list",
+    "pages/records/records",
+    "pages/info/info",
+    "pages/help/help",
+    "pages/feedback/feedback"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,12 +25,6 @@
         "text": "首页",
         "iconPath": "/images/tab/home.png",
         "selectedIconPath": "images/tab/home_click.png"
-      },
-      {
-        "pagePath": "pages/booking/booking",
-        "text": "预约",
-        "iconPath": "/images/tab/order.png",
-        "selectedIconPath": "images/tab/order_click.png"
       },
       {
         "pagePath": "pages/personal/personal",

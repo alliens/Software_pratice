@@ -84,5 +84,20 @@ Page({
     wx.navigateTo({
       url: '../help/help',
     })
+  },
+  gerenBook:function(e){
+    wx.navigateTo({
+      url: '../booking/booking',
+    })
+  },
+  wodeBook:function(e){
+    wx.navigateTo({
+      url: '../records/records',
+    })
+  },
+  advice:function(e){
+    wx.navigateTo({
+      url: '../feedback/feedback',
+    })
   }
 })
