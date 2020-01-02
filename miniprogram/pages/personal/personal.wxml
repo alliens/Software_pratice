@@ -21,7 +21,7 @@
 
     <image src='/images/avatar/info.png' class='info-img'></image>
     <text class='info'>我的资料</text>
-    <image src='/images/icon/arrow-right.png' class='arrow'></image>
+    <!-- <image src='/images/icon/arrow-right.png' class='arrow'></image> -->
   </view>
 
   <modal hidden="{{hiddenmodalput}}" title="请完善个人信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
@@ -33,15 +33,16 @@
   <view class='vie-two' bindtap='record'>
     <image src='/images/avatar/guahao.png' class='guahao-img'></image>
     <text class='guahao'>挂号记录</text>
-    <image src='/images/icon/arrow-right.png' class='arrow'></image>
+    <!-- <image src='/images/icon/arrow-right.png' class='arrow'></image> -->
 
   </view>
   <view class='horizon1'></view>
 
   <view class='vie-three' bindtap='call'>
     <image src='/images/avatar/timg.png' class='service-img'></image>
+
     <text class='service'>客服电话</text>
-    <image src='/images/icon/arrow-right.png' class='arrow-1'></image>
+    <!-- <image src='/images/icon/arrow-right.png' class='arrow-1'></image> -->
     <text class='service-number' bindtap='call'> 18811639806</text>
   </view>
 </view>
