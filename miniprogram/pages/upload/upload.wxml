@@ -1,2 +1,15 @@
-<!--pages/upload/upload.wxml-->
-<text>pages/upload/upload.wxml</text>
+<view class='content_box'>
+  <text class='content'>{{feedback_content}}</text>
+</view>
+
+<view class='textarea'>
+  <textarea placeholder='请填写10个字以上的问题描述以使我们提供更好的帮助' maxlength='200' auto-focus='true' show-confirm-bar='true' adjust-position='true'>
+  </textarea>
+  <text class='words_limit'>0/200</text>
+  <view class='line'></view>
+</view>
+
+<view>
+  <text class='shoot_pic'>截图(0/1)</text>
+  <image class='upload_pic' src='/images/icon/upload.png'></image>
+</view>

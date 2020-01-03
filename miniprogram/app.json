@@ -9,7 +9,8 @@
     "pages/info/info",
     "pages/help/help",
     "pages/feedback/feedback",
-    "pages/upload/upload"
+    "pages/upload/upload",
+    "pages/chatroom/chatroom"
   ],
   "window": {
     "backgroundTextStyle": "light",

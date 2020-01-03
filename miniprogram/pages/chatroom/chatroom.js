@@ -1,11 +1,11 @@
-// pages/feedback/feedback.js
+// pages/chatroom/chatroom.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    itemList: ['不能打开小程序','小程序闪退','卡顿投诉','界面加载','界面异常', '其他异常']
+
   },
 
   /**
@@ -15,17 +15,6 @@ Page({
 
   },
 
-  upload:function (e){
-
-    var index = e.currentTarget.dataset.id
-    var feedback_content=this.data.itemList[index]
-    this.setData({
-      feedback_content:feedback_content
-    })
-    wx.navigateTo({
-      url: '../upload/upload?content='+feedback_content,
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
