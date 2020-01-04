@@ -22,7 +22,7 @@
 
 <view class='clickBox_two'>
   <image src='/images/icon/location.png' class='Imageicon geren'></image>
-  <text class='gerenBook' >医院导览</text>
+  <text class='gerenBook' bindtap='navigate'>医院导览</text>
   <view class='line'></view>
   <image src='/images/icon/wode.png' class='Imageicon wode'></image>
   <text class='wodeBook' bindtap='Tohelp' >使用帮助</text>

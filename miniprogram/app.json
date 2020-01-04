@@ -35,5 +35,10 @@
         "selectedIconPath": "images/tab/user_click.png"
       }
     ]
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
   }
 }
