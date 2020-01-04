@@ -64,37 +64,8 @@ Page({
     })
   },
   navigate: function(e) {
-    wx.showActionSheet({
-      itemList: ['昌平校区', '东校区'],
-      success(res) {
-        if (res.tapIndex == 0) {
-          wx.getLocation({
-            type: 'gcj02',
-            success: function(res) {
-              wx.openLocation({
-                latitude: res.latitude,
-                longitude: res.longitude,
-                name: "北京化工大学昌平校区校医院",
-                address: "..",
-                scale: 15
-              })
-            },
-          })
-        } else if (res.tapIndex == 1) {
-          wx.getLocation({
-            type: 'gcj02',
-            success: function(res) {
-              wx.openLocation({
-                latitude: res.latitude,
-                longitude: res.longitude,
-                name: "北京化工大学东校区校医院",
-                address: "..",
-                scale: 15
-              })
-            },
-          })
-        }
-      }
+    wx.navigateTo({
+      url: '../chatroom/chatroom',
     })
   },
 

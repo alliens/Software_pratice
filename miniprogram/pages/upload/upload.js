@@ -29,23 +29,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // var feedback_content=options.content
-    // this.setData({
-    //   feedback_content:feedback_content
-    // })
+    var feedback_content = options.content
+    this.setData({
+      feedback_content: feedback_content
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function (options) {
 
   },
 
@@ -63,10 +63,13 @@ Page({
     wx.chooseImage({
       success: chooseResult => {
         wx.showLoading({
-          title: '上传中。。。',
+          title: '上传中,请稍等',
         })
         ph_path = chooseResult.tempFilePaths[0]
         console.log(ph_path)
+        this.setData({
+          imag_path:ph_path
+        })
         setTimeout(function () {
           wx.hideLoading()
         }, 1000)
@@ -96,7 +99,7 @@ Page({
           this.setData({
             result: JSON.stringify(res.result)
           })
-        this.onLoad()
+        // this.onLoad()
       },
       fail: err => {
         wx.showToast({

@@ -3,7 +3,7 @@
 </view>
 
 <view class='textarea'>
-  <textarea placeholder='请填写10个字以上的问题描述以使我们提供更好的帮助' maxlength='200' auto-focus='true' show-confirm-bar='true' adjust-position='true'  name='yj'>
+  <textarea placeholder='请填写10个字以上的问题描述以使我们提供更好的帮助' maxlength='200' auto-focus='true' show-confirm-bar='true' adjust-position='true' name='yj'>
   </textarea>
   <text class='words_limit'>0/200</text>
   <view class='line'></view>
@@ -12,7 +12,8 @@
 <view>
   <text class='shoot_pic'>截图(0/1)</text>
   <image class='upload_pic' bindtap="chuantupian" src='/images/icon/upload.png'></image>
+  <image src='{{imag_path}}' class='upload_imag'></image>
 </view>
 <view>
-  <button bindtap="shangchuan" style='margin-right:5px;margin-left:5px'>发布</button>
+  <button bindtap="shangchuan" class='submit' type='primary'>发布</button>
 </view>

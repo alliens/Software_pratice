@@ -29,13 +29,11 @@
         "selectedIconPath": "images/tab/home_click.png"
       },
       {
-        "pagePath": "pages/personal/personal",
+        "pagePath": "pages/info/info",
         "text": "我的",
         "iconPath": "/images/tab/user.png",
         "selectedIconPath": "images/tab/user_click.png"
       }
     ]
-  },
-  "sitemapLocation": "sitemap66.json"
-}
+  }
 }
