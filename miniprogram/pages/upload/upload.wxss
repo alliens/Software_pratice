@@ -39,3 +39,15 @@
   top: 280rpx;
   right: 120rpx;
 }
+.upload_imag{
+  width: 200rpx;
+  height: 200rpx;
+  position: relative;
+  top: 280rpx;
+  right: 100rpx;
+}
+.submit{
+  width: 600rpx;
+  position: relative;
+  top:450rpx;
+}

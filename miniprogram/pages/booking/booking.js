@@ -27,7 +27,7 @@ Page({
   },
   onLoad:function(options){
     var doctor_p = options.id
-    debugger
+
     db.collection('doctor').where({
       where: doctor_p
     }).get({
