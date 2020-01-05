@@ -36,11 +36,11 @@
     <view class='line'></view>
     <view>
       <image class='doctor-img' src='/images/avatar/doctor.png'></image>
-      <text class='doctorOne' bindtap='Booking' data-number="1">{{doctor[0].name+"医生"}}</text>
+      <text class='doctorOne' bindtap='Booking' data-number="{{doctor[0]._id}}">{{doctor[0].name+"医生"}}</text>
     </view>
     <view>
       <image class='doctor-img' src='/images/avatar/doctor.png'></image>
-      <text class='doctorTwo' bindtap='Booking' data-number="2">{{doctor[1].name+"医生"}}</text>
+      <text class='doctorTwo' bindtap='Booking' data-number="{{doctor[1]._id}}">{{doctor[1].name+"医生"}}</text>
     </view>
   </view>
   <view class="nav_right" wx:if="{{curId==2}}">

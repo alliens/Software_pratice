@@ -2,7 +2,7 @@
 //获取应用实例
 const app = getApp()
 var id = ''
-var next=''
+var next = ''
 wx.cloud.init();
 const db = wx.cloud.database({
   //这个是环境ID不是环境名称
@@ -17,7 +17,7 @@ Page({
   },
 
   // 点击预约
-  submit: function (event) {
+  submit: function(event) {
     wx.cloud.callFunction({
       name: 'getid',
       complete: res => {
@@ -41,7 +41,7 @@ Page({
                 cancelText: '取消',
                 confirmText: '确认',
                 confirmColor: '#63B8FF',
-                success: function (res) {
+                success: function(res) {
                   if (res.cancel) {
 
                   } else {
@@ -58,27 +58,24 @@ Page({
     })
   },
 
-  call: function (event) {
+  call: function(event) {
     wx.makePhoneCall({
       phoneNumber: '010-80104061',
     })
   },
-  navigate: function (e) {
-    wx.openLocation({
-      latitude: 40.2526140000,
-      longitude: 116.1456410000,
-      name: "北京化工大学昌平新校区校医院",
-      scale: 15
+  navigate: function(e) {
+    wx.navigateTo({
+      url: '../chatroom/chatroom',
     })
   },
-  
-  actioncnt: function () {
+
+  actioncnt: function() {
     wx.showActionSheet({
       itemList: ['A', 'B', 'C'],
-      success: function (res) {
+      success: function(res) {
         console.log(res.tapIndex)
       },
-      fail: function (res) {
+      fail: function(res) {
         console.log(res.errMsg)
       }
     })
@@ -155,41 +152,40 @@ Page({
     debugger
     this.popup.bindgetUserInfo()
   },
-  Tohelp: function (e) {
+  Tohelp: function(e) {
     wx.navigateTo({
       url: '../help/help',
     })
   },
-  gerenBook:function(e){
+  gerenBook: function(e) {
     // wx.navigateTo({
     //   url: '../booking/booking',
     // })
     wx.showActionSheet({
       itemList: ['昌平校区', '东校区'],
-      success: function (res) {
+      success: function(res) {
         //console.log(res.tapIndex)
-        if (res.tapIndex==0){
+        if (res.tapIndex == 0) {
           next = '../booking/booking?id=' + 'north'
-        }
-        else {
+        } else {
           next = '../booking/booking?id=' + 'east'
         }
         wx.navigateTo({
           url: next,
         })
       },
-      fail: function (res) {
+      fail: function(res) {
         console.log(res.errMsg)
       }
     })
 
   },
-  wodeBook:function(e){
+  wodeBook: function(e) {
     wx.navigateTo({
       url: '../records/records',
     })
   },
-  advice:function(e){
+  advice: function(e) {
     wx.navigateTo({
       url: '../feedback/feedback',
     })

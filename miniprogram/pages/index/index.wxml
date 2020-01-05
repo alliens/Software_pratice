@@ -22,9 +22,9 @@
 
 <view class='clickBox_two'>
   <image src='/images/icon/location.png' class='Imageicon geren'></image>
-  <text class='gerenBook' >医院导览</text>
+  <text class='gerenBook' bindtap='navigate'>地图导览</text>
   <view class='line'></view>
-  <image src='/images/icon/wode.png' class='Imageicon wode'></image>
+  <image src='/images/icon/help.png' class='Imageicon wode'></image>
   <text class='wodeBook' bindtap='Tohelp' >使用帮助</text>
   <view class='line_2'></view>  
   <image src='/images/icon/phone.png' class='Imageicon wode Image_advide'></image>
@@ -57,3 +57,4 @@
 </view>
 
 <text class='help' bindtap='Tohelp'>使用帮助</text> -->
+

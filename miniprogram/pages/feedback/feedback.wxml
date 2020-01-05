@@ -1,32 +1,32 @@
 <view class='Title'>
   <text class="title">请选择反馈内容</text>
 </view>
-<view class='background' hover-class='hoverClass' bindtap='upload'>
-  <text class='content'>不能打开小程序</text>
+<view class='background' hover-class='hoverClass' bindtap='upload' data-id="0">
+  <text class='content' >不能打开小程序</text>
   <image src='/images/icon/arrow-right.png' class='arrow'></image>
 </view>
 <view class='line'></view>
-<view class='background' hover-class='hoverClass' bindtap='upload'>
+<view class='background' hover-class='hoverClass' bindtap='upload' data-id="1">
   <text class='content'> 小程序闪退</text>
   <image src='/images/icon/arrow-right.png' class='arrow'></image>
 </view>
 <view class='line'></view>
-<view class='background' hover-class='hoverClass' bindtap='upload'>
+<view class='background' hover-class='hoverClass' bindtap='upload' data-id="2">
   <text class='content'>卡顿投诉</text>
   <image src='/images/icon/arrow-right.png' class='arrow'></image>
 </view>
 <view class='line'></view>
-<view class='background' hover-class='hoverClass' bindtap='upload'>
+<view class='background' hover-class='hoverClass' bindtap='upload' data-id="3">
   <text class='content'>界面加载慢</text>
   <image src='/images/icon/arrow-right.png' class='arrow'></image>
 </view>
 <view class='line'></view>
-<view class='background' hover-class='hoverClass' bindtap='upload'>
+<view class='background' hover-class='hoverClass' bindtap='upload' data-id="4">
   <text class='content'>界面异常</text>
   <image src='/images/icon/arrow-right.png' class='arrow'></image>
 </view>
 <view class='line'></view>
-<view class='background' hover-class='hoverClass' bindtap='upload'>
+<view class='background' hover-class='hoverClass' bindtap='upload' data-id="5">
   <text class='content'>其他异常</text>
   <image src='/images/icon/arrow-right.png' class='arrow'></image>
 </view>
