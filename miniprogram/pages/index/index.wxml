@@ -31,6 +31,9 @@
   <text class='wodeBook advice' bindtap='advice'>意见反馈</text>
 </view>
 
+<popup id='popup' title='Login' content='Login' btn_no='No' btn_ok='Ok' bind:error="_error" bind:success="_success"></popup>
+<!-- <button open-type="getUserInfo" bindgetuserinfo="bindgetUserInfo" class='btn'>点击</button> -->
+
 <!-- <view class="name">
   <text>北京化工大学昌平校区校医院</text>
 </view> -->

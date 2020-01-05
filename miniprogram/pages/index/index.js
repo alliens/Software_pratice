@@ -84,7 +84,38 @@ Page({
     })
   },
 
+  // 隐藏窗口
+  hidePopup() {
+    this.popup.hidePopup();
+  },
+  hide() {
+    this.popup.hide();
+  },
+
+  // 显示窗口
+  showPopup() {
+    this.popup.showPopup();
+  },
+ 
+  //取消事件
+  _error() {
+    console.log('你点击了取消');
+    this.popup.hidePopup();
+  },
+
+  //确认事件
+  _success() {
+    console.log('你点击了确定');
+    this.popup.hidePopup();
+  },
+
+  onReady: function() {
+    //获得popup组件
+    this.popup = this.selectComponent("#popup");
+  },
+
   onLoad: function () {
+    this.popup = this.selectComponent("#popup");
     wx.cloud.callFunction({
       name: 'getid',
       complete: res => {
@@ -93,6 +124,36 @@ Page({
         id = openid
       }
     })
+    
+    wx.getSetting({
+      success: res => {
+        // 判断用户是否登录
+        // 用户未登录
+        if (!res.authSetting['scope.userInfo']) {
+          //debugger
+          console.log("Show the Pop up")
+          this.showPopup()
+          
+        }
+        else {
+          console.log("Hide the Pop up")
+          this.hide()
+        }
+      }
+    })
+  },
+  bindgetUserInfo: function(e) {
+    // app.globalData.userInfo = e.detail.userInfo
+
+    // this.setData({
+    //   userInfo: e.detail.userInfo,
+    //   hasUserInfo: true,
+    // })
+    // wx.navigateBack({
+    //   delta: 1
+    // })
+    debugger
+    this.popup.bindgetUserInfo()
   },
   Tohelp: function (e) {
     wx.navigateTo({
