@@ -31,3 +31,30 @@
   <text class='wodeBook advice' bindtap='advice'>意见反馈</text>
 </view>
 
+<popup id='popup' title='Login' content='Login' btn_no='No' btn_ok='Ok' bind:error="_error" bind:success="_success"></popup>
+<!-- <button open-type="getUserInfo" bindgetuserinfo="bindgetUserInfo" class='btn'>点击</button> -->
+
+<!-- <view class="name">
+  <text>北京化工大学昌平校区校医院</text>
+</view> -->
+
+
+
+<!-- <view class='loc-container' bindtap='navigate'>
+  <image class='loc-img' src="/images/icon/location.png"></image>
+  <text class='address'>北京化工大学昌平校区后勤服务楼 </text>
+</view>
+
+<view class='phone-container'>
+  <image class='phone-img' src="/images/icon/phone.png"></image>
+  <view bindtap='call'>
+    <text class="phone-number">010-80104061</text>
+  </view>
+</view>
+
+<view class='booking'>
+  <button class='btn' bindtap='submit' hover-class='btn_hover'>预约</button>
+</view>
+
+<text class='help' bindtap='Tohelp'>使用帮助</text> -->
+

@@ -7,7 +7,8 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkSiteMap": false
 	},
 	"appid": "wx1a6879fce85ad9aa",
 	"projectname": "BUCT_Pocket%20Medical",
