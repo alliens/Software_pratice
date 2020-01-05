@@ -22,7 +22,7 @@
 
 <view class='clickBox_two'>
   <image src='/images/icon/location.png' class='Imageicon geren'></image>
-  <text class='gerenBook' bindtap='navigate'>联系客服</text>
+  <text class='gerenBook' bindtap='navigate'>地图导览</text>
   <view class='line'></view>
   <image src='/images/icon/help.png' class='Imageicon wode'></image>
   <text class='wodeBook' bindtap='Tohelp' >使用帮助</text>
@@ -31,26 +31,3 @@
   <text class='wodeBook advice' bindtap='advice'>意见反馈</text>
 </view>
 
-<!-- <view class="name">
-  <text>北京化工大学昌平校区校医院</text>
-</view> -->
-
-
-
-<!-- <view class='loc-container' bindtap='navigate'>
-  <image class='loc-img' src="/images/icon/location.png"></image>
-  <text class='address'>北京化工大学昌平校区后勤服务楼 </text>
-</view>
-
-<view class='phone-container'>
-  <image class='phone-img' src="/images/icon/phone.png"></image>
-  <view bindtap='call'>
-    <text class="phone-number">010-80104061</text>
-  </view>
-</view>
-
-<view class='booking'>
-  <button class='btn' bindtap='submit' hover-class='btn_hover'>预约</button>
-</view>
-
-<text class='help' bindtap='Tohelp'>使用帮助</text> -->
