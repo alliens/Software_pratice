@@ -10,9 +10,9 @@
   <view>
     <text class='booking-process'>个人预约流程</text>
     <view>
-      <text class='detail'>点击 我的 -> 点击登录，然后点击"我的资料"填入学号和姓名,即可进行预约挂号</text>
+      <text class='detail'>点击登录，然后点击"我的"填入学号和姓名,即可进行预约挂号</text>
     </view>
-    <image src='/images/icon/ph2.jpeg' class='ph1'></image>
+    <image src='/images/icon/ph2.jpg' class='ph1'></image>
     <image src='/images/icon/ph1.jpeg' class='ph2'></image>
   </view>
 
