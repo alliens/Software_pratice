@@ -3,13 +3,16 @@
 }
 
 swiper {
-  width: 100%;
-  height: 450rpx;
+  width: 650;
+  height: 350rpx;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: translateY(0);
 }
 
 swiper image {
-  width: 100%;
-  height: 450rpx;
+  width: 650rpx;
+  height: 350rpx;
 }
 
 .name {
@@ -21,16 +24,21 @@ swiper image {
 }
 
 .line {
-  width: 750rpx;
+  width: 600rpx;
   height: 1px;
   background-color: #e5e5e5;
-  vertical-align: middle;
-  margin-top: 20rpx;
-  z-index: -99;
-  position: absolute;
-  top: 20rpx;
+  position: relative;
+  left: 28rpx;
+  top: 10rpx;
 }
-
+.line_2{
+  width: 600rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  position: relative;
+  left: 28rpx;
+  top: 30rpx;
+}
 .loc-container {
   margin-top: 40rpx;
   margin-left: 20rpx;
@@ -85,7 +93,8 @@ swiper image {
   width: 50%;
   border-right: solid 0.5rpx silver;
 }
-.help{
+
+.help {
   position: relative;
   left: 315rpx;
   top: 100rpx;
@@ -93,3 +102,90 @@ swiper image {
   font-size: 30rpx;
 }
 
+.card {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 4px 4px #ccc;
+  margin-left: 45rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  height: 450rpx;
+  width: 650rpx;
+}
+
+.border {
+  border-radius: 10px;
+}
+
+.viewImag {
+  height: 350rpx;
+  width: 650rpx;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  position: relative;
+  margin: 40rpx;
+}
+
+.clickBox {
+  background-color: white;
+  width: 650rpx;
+  height: 200rpx;
+  margin: 40rpx;
+  border-radius: 15px;
+  box-shadow: 2px 1px 1px 1px #ccc;
+}
+
+.clickBox_two {
+  background-color: white;
+  width: 650rpx;
+  height: 300rpx;
+  margin: 40rpx;
+  border-radius: 15px;
+  box-shadow: 2px 1px 1px 1px #ccc;
+  position: relative;
+  /* bottom: 20rpx; */
+}
+
+.Imageicon {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.geren {
+  position: relative;
+  left: 50rpx;
+  top: 10rpx;
+}
+
+.wode {
+  position: relative;
+  top: 30rpx;
+  left: 55rpx;
+}
+
+.gerenBook {
+  color: #696969;
+  position: relative;
+  left: 80rpx;
+  bottom: 10rpx;
+}
+
+.wodeBook {
+  color: #696969;
+  position: relative;
+  left: 80rpx;
+  top: 10rpx;
+}
+
+.advice {
+  color: #696969;
+  position: relative;
+  top: 30rpx;
+  left: 80rpx;
+}
+
+.Image_advide {
+  position: relative;
+  top: 45rpx;
+}

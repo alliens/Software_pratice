@@ -110,7 +110,7 @@ page {
   height: 1000rpx;
 }
 
-.navi{
+.navi {
   font-size: 30rpx;
   text-decoration: underline;
   position: relative;
@@ -118,13 +118,15 @@ page {
   left: 50rpx;
   color: #575757;
 }
-.interpretation{
+
+.interpretation {
   font-size: 30rpx;
   font-weight: 500;
   color: red;
   position: relative;
   top: 880rpx;
 }
+
 .btn {
   width: 95%;
   height: 100%;

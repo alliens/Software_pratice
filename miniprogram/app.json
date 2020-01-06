@@ -1,8 +1,16 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/booking/booking",
+    "pages/reservation/reservation",
     "pages/personal/personal",
-    "pages/booking/booking"
+    "pages/doctor-list/doctor-list",
+    "pages/records/records",
+    "pages/info/info",
+    "pages/help/help",
+    "pages/feedback/feedback",
+    "pages/upload/upload",
+    "pages/chatroom/chatroom"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,17 +29,19 @@
         "selectedIconPath": "images/tab/home_click.png"
       },
       {
-        "pagePath": "pages/booking/booking",
-        "text": "预约",
-        "iconPath": "/images/tab/order.png",
-        "selectedIconPath": "images/tab/order_click.png"
-      },
-      {
-        "pagePath": "pages/personal/personal",
+        "pagePath": "pages/info/info",
         "text": "我的",
         "iconPath": "/images/tab/user.png",
         "selectedIconPath": "images/tab/user_click.png"
       }
     ]
-  }
+  },
+  "permission":{
+
+           "scope.userLocation": {
+
+     "desc":"你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
 }

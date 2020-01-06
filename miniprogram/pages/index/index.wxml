@@ -1,24 +1,46 @@
-<view>
+<view class='viewImag'>
   <swiper indicator-dots='true' autoplay='true' interval='3000'>
     <swiper-item>
-      <image src='/images/avatar/swiper3.jpg' data-postid="0"></image>
+      <image src='/images/avatar/swiper3.jpg' data-postid="0" class='border'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/avatar/swiper2.jpg'></image>
+      <image src='/images/avatar/swiper2.jpg' class='border'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/avatar/swiper1.jpeg'></image>
+      <image src='/images/avatar/swiper1.jpeg' class='border'></image>
     </swiper-item>
   </swiper>
 </view>
 
-<view class="name">
-  <text>北京化工大学昌平校区校医院</text>
+<view class='clickBox'>
+  <image src='/images/icon/geren.png' class='Imageicon geren'></image>
+  <text class='gerenBook' bindtap='gerenBook'>个人预约</text>
+  <view class='line'></view>
+  <image src='/images/icon/wode.png' class='Imageicon wode'></image>
+  <text class='wodeBook' bindtap='wodeBook'>我的预约</text>
 </view>
 
-<view class='line'></view>
+<view class='clickBox_two'>
+  <image src='/images/icon/location.png' class='Imageicon geren'></image>
+  <text class='gerenBook' bindtap='navigate'>地图导览</text>
+  <view class='line'></view>
+  <image src='/images/icon/help.png' class='Imageicon wode'></image>
+  <text class='wodeBook' bindtap='Tohelp' >使用帮助</text>
+  <view class='line_2'></view>  
+  <image src='/images/icon/phone.png' class='Imageicon wode Image_advide'></image>
+  <text class='wodeBook advice' bindtap='advice'>意见反馈</text>
+</view>
 
-<view class='loc-container' bindtap='navigate'>
+<popup id='popup' title='Login' content='Login' btn_no='No' btn_ok='Ok' bind:error="_error" bind:success="_success"></popup>
+<!-- <button open-type="getUserInfo" bindgetuserinfo="bindgetUserInfo" class='btn'>点击</button> -->
+
+<!-- <view class="name">
+  <text>北京化工大学昌平校区校医院</text>
+</view> -->
+
+
+
+<!-- <view class='loc-container' bindtap='navigate'>
   <image class='loc-img' src="/images/icon/location.png"></image>
   <text class='address'>北京化工大学昌平校区后勤服务楼 </text>
 </view>
@@ -34,4 +56,5 @@
   <button class='btn' bindtap='submit' hover-class='btn_hover'>预约</button>
 </view>
 
-<text class='help' bindtap='Tohelp'>使用帮助</text>
+<text class='help' bindtap='Tohelp'>使用帮助</text> -->
+

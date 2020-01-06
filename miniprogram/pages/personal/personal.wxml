@@ -5,7 +5,7 @@
     <text class='user-name'>{{userInfo.nickName}}</text> -->
     <view class='booking'>
       <!-- <image class='login-img' src='/images/avatar/doctor.jpg'></image> -->
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='btn' >
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindgetUserInfo" class='btn' >
         <view class='login-text'>点击登录</view>
       </button>
       <image wx:if="{{hasUserInfo}}" class='login-img' src='{{userInfo.avatarUrl}}'></image>
@@ -20,8 +20,8 @@
   <view class='vie-one' bindtap='info'>
 
     <image src='/images/avatar/info.png' class='info-img'></image>
-    <text class='info' bindtap='info'>我的资料</text>
-    <image src='/images/icon/arrow-right.png' class='arrow'></image>
+    <text class='info'>我的资料</text>
+    <!-- <image src='/images/icon/arrow-right.png' class='arrow'></image> -->
   </view>
 
   <modal hidden="{{hiddenmodalput}}" title="请完善个人信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
@@ -33,18 +33,16 @@
   <view class='vie-two' bindtap='record'>
     <image src='/images/avatar/guahao.png' class='guahao-img'></image>
     <text class='guahao'>挂号记录</text>
-    <image src='/images/icon/arrow-right.png' class='arrow'></image>
+    <!-- <image src='/images/icon/arrow-right.png' class='arrow'></image> -->
 
   </view>
   <view class='horizon1'></view>
 
-  <view class='vie-three'>
+  <view class='vie-three' bindtap='call'>
     <image src='/images/avatar/timg.png' class='service-img'></image>
-    <text class='service' bindtap='call'>客服电话</text>
-    <image src='/images/icon/arrow-right.png' class='arrow-1'></image>
+
+    <text class='service'>客服电话</text>
+    <!-- <image src='/images/icon/arrow-right.png' class='arrow-1'></image> -->
     <text class='service-number' bindtap='call'> 18811639806</text>
   </view>
 </view>
-
-<!-- <button type='primary' bindtap='getOpenid'>获取用户openid</button>
-<text>{{openid}}</text> -->
