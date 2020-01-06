@@ -2,17 +2,52 @@
 Page({
 
   /**
-   * 页面的初始数据
-   */
+  * 页面的初始数据
+  */
   data: {
-
+    //设置标记点
+  //   markers: [
+  //     {
+  //       iconPath: "/images/icon/location.png",
+  //       id: 4,
+  //       latitude: 40.2526140000,
+  //       longitude: 116.1456410000,
+  //       width: 30,
+  //       height: 30
+  //     }
+  //   ],
+  //   //当前定位位置
+  //   latitude: '',
+  //   longitude: '',
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  navigate: function (e) {
+    wx.openLocation({
+      latitude: 40.2526140000,
+      longitude: 116.1456410000,
+      name: "北京化工大学昌平新校区校医院",
+      scale: 15
+    })
+  },
+  navigate2: function (e) {
+    wx.openLocation({
+      latitude: 39.9717142400,
+      longitude: 116.4202791500, 
+      name: "北京化工大学东校区校医院",
+      scale: 15
+    })
+  },
+  onLoad() {
+    //获取当前位置
+    // wx.getLocation({
+    //   type: 'gcj02',
+    //   success: (res) => {
+    //     console.log(res)
+    //     this.setData({
+    //       latitude: 40.2526140000,
+    //       longitude: 116.1456410000
+    //     })
+    //   }
+    // })
   },
 
   /**
