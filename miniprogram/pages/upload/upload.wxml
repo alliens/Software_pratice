@@ -3,7 +3,7 @@
 </view>
 
 <view class='textarea'>
-  <textarea placeholder='请填写10个字以上的问题描述以使我们提供更好的帮助' maxlength='200' auto-focus='true' show-confirm-bar='true' adjust-position='true' name='yj'>
+  <textarea placeholder='请填写10个字以上的问题描述以使我们提供更好的帮助' value='{{concent}}' maxlength='200' auto-focus='true' show-confirm-bar='true' adjust-position='true' name='yj' bindblur='bindTextAreaBlur' focus="{{focus}}">
   </textarea>
   <text class='words_limit'>0/200</text>
   <view class='line'></view>

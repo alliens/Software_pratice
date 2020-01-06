@@ -12,6 +12,7 @@ var sclnum = ""
 var sclname = ""
 var out = 0
 var ph_path = ""
+var yj=""
 const db = wx.cloud.database({
   //这个是环境ID不是环境名称
   env: 'buct-medicine-65f74a'
@@ -35,6 +36,14 @@ Page({
     })
   },
 
+  bindTextAreaBlur: function (e) {
+    console.log(e.detail.value)      
+    yj = e.detail.value
+    this.setData({
+      concent: e.detail.value,
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -83,13 +92,17 @@ Page({
   shangchuan() {
     let that = this;
     let timestamp = (new Date()).valueOf();
+    this.setData({
+      focus: 'false',
+      concent1: this.data.concent,         //打印结果   ”是我是一个textarea”
+    })
     console.log(ph_path)
     //console.log(yj)
     wx.cloud.callFunction({
       name: 'add_yj',
       data: {
         num: timestamp,
-        yj:"hello"
+        yj:yj
       },
       //用户新建成功
       success: res => {
@@ -99,6 +112,7 @@ Page({
           this.setData({
             result: JSON.stringify(res.result)
           })
+          
         // this.onLoad()
       },
       fail: err => {
@@ -129,6 +143,9 @@ Page({
         }
 
       },
+    })
+    wx.navigateBack({
+
     })
     //debugger
   },
