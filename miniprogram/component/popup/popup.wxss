@@ -26,7 +26,9 @@
   padding: 20rpx;
   text-align: center;
   font-size: 40rpx;
-  border-bottom: 2rpx solid red;
+  /* border-bottom: 2rpx solid red; */
+  position: relative;
+  right: 20rpx;
 }
 .wx-popup-con {
   margin: 60rpx 10rpx;
